@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>משימות</h1>
+  <div class="row">
+    {% for course in courses %}
+    <div id="column">
+        <h1>{{course}}:</h1>
+        <ol id="{{course}}"></ol>
+        <input type="text" class="form-control" id="{{course}}Field" >
+        <button type="submit" class="btn btn-primary mb-2" style="margin-top: 8px;" onclick="newItem('{{course}}','{{course}}Field')">הוסף</button>
+    </div>
+    {% endfor %}
+  </div>
+  <h1>טקס אחר</h1>
+  <div class="row">
+    <div id="column">
+    <h1>רשימת משימות:</h1>
+      <ol id="OtherList"></ol>
+      	<input type="text" class="form-control" id="TaskField" >
+      	<button type="submit" class="btn btn-primary mb-2" style="margin-top: 8px;" onclick="newItem('OtherList','TaskField')">הוסף</button>
+    </div>
+    <div id="column">
+      <h1>קישורים:</h1>
+      <div class="btn-group btn-group-sm">
+      <ol id="LinkList"></ol>
+      </div>
+      <form class="form-inline">
+        <div class="form-group mb-2">
+            <input type="text" class="form-control" id="LinkAbout" placeholder="תיאור קצר">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <input type="text" class="form-control" id="Link" placeholder="לינק..">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2" id="LinkButton">הוסף</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}

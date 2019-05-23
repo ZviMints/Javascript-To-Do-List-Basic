@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html lang="he">
+<head>
+  <title>hello, world</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body dir="rtl">
+<div id="header">
+  <h1>מערכת שעות</h1>
+</div>
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+<div id="footer">
+<hr>
+<h1>כל הזכיות שמורות לצבי מינץ</h1>
+</div>
+  <script src= "{{ url_for('static',filename='js/script.js') }}"></script>
+  <script src= "{{ url_for('static',filename='js/links.js') }}"></script>
+</body>
+</html>
