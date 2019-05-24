@@ -17,7 +17,7 @@ h1 {
   font-size: 150%;
   font-weight: bold;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-  color:#FFDC00;
+  color: white;
 }
 
 #content {
@@ -111,7 +111,7 @@ margin-top: 30px;
   position: absolute;
   left: 5px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 #1c252b;
   top: 11px;
 }
 
@@ -154,7 +154,7 @@ input[type="text"] {
     background: #2b303b;
     border: none;
     font-size: 10pt;
-    color: #262626;
+    color: white;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

@@ -8,7 +8,7 @@
         <ol id="{{course}}"></ol>
         <form>
         <input type="text" id="{{course}}Field" >
-        <button type="submit" style="margin-top: 8px;" onclick="newItem('{{course}}','{{course}}Field')">הוסף</button>
+        <button type="submit" style="margin-top: 8px;" onclick="newItem('{{course}}','{{course}}Field'); return false;">הוסף</button>
        </form>
     </div>
     {% endfor %}
