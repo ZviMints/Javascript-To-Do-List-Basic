@@ -124,12 +124,13 @@ margin-top: 30px;
 button[type="submit"] {
     outline: 0;
     padding: 5px 12px;
-    display: block;
+    margin-right: 5px;
     color: #9fa8b0;
     font-weight: bold;
     text-shadow: 1px 1px #1f272b;
     border: 1px solid #1c252b;
     border-radius: 3px;
+    height:40px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     background: #232B30; /* old browsers */
