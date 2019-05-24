@@ -5,6 +5,13 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <script>
+  var courses = [];
+  {% for course in courses %}
+    courses.push("{{course}}");
+  {% endfor %}
+  console.log(courses);
+  </script>
 </head>
 <body dir="rtl">
 <div id="header">
@@ -17,6 +24,15 @@
 <hr>
 <h1>כל הזכיות שמורות לצבי מינץ</h1>
 </div>
+  <script>
+  // Check for saved items
+  for(let i=0; i<courses.length; i++)
+  {
+    if (localStorage[courses[i]]) {
+      document.getElementById(courses[i]).innerHTML = localStorage[courses[i]];
+    }
+  }
+  </script>
   <script src= "{{ url_for('static',filename='js/script.js') }}"></script>
   <script src= "{{ url_for('static',filename='js/links.js') }}"></script>
 </body>

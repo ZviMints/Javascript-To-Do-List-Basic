@@ -1,5 +1,3 @@
-courses = ["C++", "הסתברות", "אלגורתמים 2","מערכות הפעלה","בטיחות תוכנה","מסדי נתונים","אוטומטים","תורת המספרים","OtherList"];
-
 function newItem(TheList,TheField) {
   let TaskList = document.getElementById(TheList);
   let TextField = document.getElementById(TheField);
@@ -31,13 +29,4 @@ function remove() {
     parent.removeChild(node); 
     localStorage[parent.id] = parent.innerHTML // updating localstorage
   },1000);
-}
-
-
-// Check for saved items
-for(let i=0; i<courses.length; i++)
-{
-  if (localStorage[courses[i]]) {
-    document.getElementById(courses[i]).innerHTML = localStorage[courses[i]];
-  }
 }

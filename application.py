@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, redirect, url_for
+from flask import Flask, render_template, session, request, redirect, url_for
 from flask_session import Session
 from tempfile import mkdtemp
 import math
@@ -19,6 +19,13 @@ courses = ["C++", "הסתברות", "אלגורתמים 2","מערכות הפע�
 @app.route("/")
 def index():
     return render_template("index.html",courses=courses)
+
+@app.route("/newNode", methods=['GET', 'POST'])
+def newNode():
+    data = request.args.get('NodeField')
+    courses.append(data);
+    return redirect(url_for('index',courses=courses))
+
 
 if __name__ == '__main__':
     app.debug = True
