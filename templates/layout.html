@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html lang="he">
 <head>
-  <title>hello, world</title>
+  <title>הערות</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
@@ -10,18 +10,17 @@
   {% for course in courses %}
     courses.push("{{course}}");
   {% endfor %}
-  console.log(courses);
   </script>
 </head>
 <body dir="rtl">
 <div id="header">
-  <h1>מערכת שעות</h1>
+  <br>
+  <h1>הערות</h1>
 </div>
 <div id="content">
     {% block content %}{% endblock %}
 </div>
 <div id="footer">
-<hr>
 <h1>כל הזכיות שמורות לצבי מינץ</h1>
 </div>
   <script>

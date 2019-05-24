@@ -2,11 +2,25 @@ body {
   font-family: Arial,Verdana,'sans serif';
   text-align: center;
   font-size: 12px;
-  background: rgb(21, 32, 42);
+  border-radius: 10px;
+  background: #005bea;
+  background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+  background: linear-gradient(bottom, #005bea, #00c6fb);
+  opacity: 0.9;
 }
 
 #header{
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+}
+#header h1 {
   margin-right: 20px;
+  color: black;
 }
 
 h1 {
@@ -28,6 +42,9 @@ margin-top: 5px;
   margin-right: 20px;
 
 }
+#otherDiv {
+  padding-bottom: 30px;
+}
 
 #otherDiv h1{
   margin-right: 20px;
@@ -47,7 +64,6 @@ margin-top: 5px;
 
 #column {
 float:right;
--webkit-border-radius: 4px;
 border-radius: 4px;
 margin-right: 35px;
 margin-top: 35px;
@@ -57,10 +73,32 @@ margin-top: 35px;
 min-width: 180px;
 min-height: 120px;
 background-color:#1e2833;
-border-radius:4px;
 box-shadow:3px 3px 4px rgba(0,0,0,0.2);
 
 }
+#AddColumn {
+  float:right;
+  border-radius: 4px;
+  margin-right: 35px;
+  margin-top: 35px;
+  padding: 8px;
+  margin-right: 35px;
+  margin-top: 35px;
+  min-width: 180px;
+  min-height: 120px;
+}
+
+#success-box {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  left: 12%;
+  background: linear-gradient(to bottom right, #B0DB7D 40%, #99DBB4 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #cbcdd3;
+  perspective: 40px;
+}
+
 
 #column ol {
   position: relative;
@@ -119,7 +157,6 @@ margin-top: 30px;
   content: '×'; /* UTF-8 symbol */
 }
 
-
 /* Dark Button CSS */
 button[type="submit"] {
     outline: 0;
@@ -141,6 +178,7 @@ button[type="submit"] {
     -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
     -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
 }
+
 button[type="submit"]:hover {
     color: #fff;
     background: #4C5A64; /* old browsers */
@@ -151,6 +189,7 @@ button[type="submit"]:hover {
 
 input[type="text"] {
     width: 200px;
+    text-align: center;
     height: 40px;
     background: #2b303b;
     border: none;
@@ -165,3 +204,4 @@ input[type="text"] {
     -o-transition: background .55s ease;
     transition: background .55s ease;
 }
+

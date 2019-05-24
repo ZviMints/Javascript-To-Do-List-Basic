@@ -1,23 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>משימות</h1>
+    <h1>קורסים</h1>
   <div class="row">
     {% for course in courses %}
     <div id="column">
         <h1>{{course}}:</h1>
         <ol id="{{course}}"></ol>
         <form>
-        <input type="text" id="{{course}}Field" >
+        <input type="text" id="{{course}}Field" placeholder="טקסט...">
         <button type="submit" style="margin-top: 8px;" onclick="newItem('{{course}}','{{course}}Field'); return false;">הוסף</button>
        </form>
     </div>
     {% endfor %}
-    <div id="column">
+    <div id="AddColumn">
       <form action="/newNode" method="GET">
-      <input type="text" name="NodeField" >
-      <button type="submit" style="margin-top: 8px;">הוסף משימה חדשה</button>
+      <input type="text" name="NodeField" placeholder="כותרת.." >
+      <button type="submit" style="margin-top: 8px;">הוסף קורס חדש</button>
      </form>
   </div>
+
   </div>
   <div id="otherDiv">
   <h1>אחר</h1>
