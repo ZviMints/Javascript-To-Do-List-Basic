@@ -44,5 +44,5 @@ function LinkList_remove() {
 
     
   if (localStorage["OtherList"]) {
-    document.getElementById("OtherList").innerHTML.innerHTML = localStorage["OtherList"];
+    document.getElementById("OtherList").innerHTML = localStorage["OtherList"];
   }
