@@ -36,6 +36,8 @@ function LinkList_remove() {
       localStorage["LinkList"] = LinkList.innerHTML // updating localstorage
     },1000);
   }
+
+  
   if (localStorage["LinkList"]) {
     LinkList.innerHTML = localStorage["LinkList"];
   }
