@@ -37,7 +37,12 @@ function LinkList_remove() {
     },1000);
   }
 
-  
+
   if (localStorage["LinkList"]) {
     LinkList.innerHTML = localStorage["LinkList"];
+  }
+
+    
+  if (localStorage["OtherList"]) {
+    document.getElementById("OtherList").innerHTML.innerHTML = localStorage["OtherList"];
   }

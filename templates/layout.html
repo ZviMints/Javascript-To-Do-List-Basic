@@ -31,7 +31,6 @@
       document.getElementById(courses[i]).innerHTML = localStorage[courses[i]];
     }
   }
-  if(localStorage("OtherList")) document.getElementById("OtherList").innerHTML = localStorage("OtherList");
   </script>
   <script src= "{{ url_for('static',filename='js/script.js') }}"></script>
   <script src= "{{ url_for('static',filename='js/links.js') }}"></script>
