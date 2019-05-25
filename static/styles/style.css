@@ -42,6 +42,7 @@ margin-top: 5px;
   margin-right: 20px;
 
 }
+
 #otherDiv {
   padding-bottom: 30px;
 }
@@ -76,29 +77,6 @@ background-color:#1e2833;
 box-shadow:3px 3px 4px rgba(0,0,0,0.2);
 
 }
-#AddColumn {
-  float:right;
-  border-radius: 4px;
-  margin-right: 35px;
-  margin-top: 35px;
-  padding: 8px;
-  margin-right: 35px;
-  margin-top: 35px;
-  min-width: 180px;
-  min-height: 120px;
-}
-
-#success-box {
-  position: absolute;
-  width: 35%;
-  height: 100%;
-  left: 12%;
-  background: linear-gradient(to bottom right, #B0DB7D 40%, #99DBB4 100%);
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px #cbcdd3;
-  perspective: 40px;
-}
-
 
 #column ol {
   position: relative;
